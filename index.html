@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="light" >
+      <img src="images/moon.png" alt="" id="icon">
+    </div>
+    <main>
+      <section class="to-do-list">
+        <div class="header">
+          <header>
+            <div class="profile-header">
+              <h3>Muhamad Aditia <span class="multiple-text"></span></h3>
+              <p class="date"></p>
+            </div>
+          </header>
+        </div>
+
+        <div class="form">
+          <form action="">
+            <input type="text" name="keyword" id="keyword" placeholder="write your note here..." autocomplete="off" autofocus />
+
+            <div class="priority">              
+              <p>Priority :</p>
+              <select id="priority" name="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+
+            <div class="due-date">
+              <p>Due Date :</p>
+              <input type="date" />
+            </div>
+
+            <button class="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="taks-list">
+          <div class="to-do">
+            <h2>To Do</h2>
+            <ul id="to-do-items"></ul>
+          </div>
+          <div class="done">
+            <h2>Done</h2>
+            <ul id="done-items"></ul>
+          </div>
+          <div class="overdue">
+            <h2>Overdue</h2>
+            <ul id="overdue-items"></ul>
+          </div>
+          <button class="delete">Delete All</button>
+        </div>
+
+      </section>
+    </main>
+
+    
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- custem js -->
+    <script src="script.js"></script>
+  </body>
+</html>
