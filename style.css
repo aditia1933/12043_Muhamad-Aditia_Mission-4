@@ -254,6 +254,14 @@ ul {
     width: 500px;
     margin: 50px 20px;
   }
+
+  .profile-header h3{
+    font-size: 1.3rem;
+  }
+
+  .profile-header .date{
+    font-size: .8rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -262,4 +270,17 @@ ul {
     max-width: 400px;
     margin: 50px 10px;
   }
+
+  .profile-header h3{
+    font-size: 2.2rem;
+  }
+
+  .profile-header span{
+    font-size: 1.8rem;
+  }
+  
+  .profile-header .date{
+    text-align: center;
+  }
+
 }
